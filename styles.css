@@ -11,9 +11,14 @@ body {
   margin: 0;
   padding: 0;
   border-width: 0;
-  overflow: hidden;
+  
   cursor: pointer;
 
+}
+
+h1{
+  color: purple;
+  font-size:2rem;
 }
 
 .back-button {
@@ -129,5 +134,16 @@ body {
     color: #000000;
     margin: 5px 0;
 
+  }
+  #questionContainer button {
+    font-size: 18px;
+    padding: 5px 10px;
+    margin: 3px;
+    border: none;
+    border-radius: 5px;
+    background-color: #53d1cb;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
   }
 }
