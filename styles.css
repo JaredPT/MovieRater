@@ -17,7 +17,7 @@ body {
 }
 
 h1{
-  color: purple;
+  color: rgb(0, 0, 0);
   font-size:2rem;
 }
 
@@ -27,9 +27,9 @@ h1{
 }
 
 #appContainer {
-  background-color: #fff;
+  background-color: rgba(255, 255, 255, 0.01); /* Red color with 50% opacity */
   z-index: 9999;
-  border-radius: 10px;
+  border-radius: 100px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   padding: 30px;
   text-align: center;
@@ -111,7 +111,9 @@ h1{
   }
 
   h1 {
-    font-size: 25px;
+    font-size: 1.5rem;
+    font-weight: bolder;
+    background-color: rgba(255, 255, 255, 0.95); /* Red color with 50% opacity */
   }
   
   button {
@@ -146,4 +148,21 @@ h1{
     cursor: pointer;
     transition: background-color 0.3s ease;
   }
+
+  @media only screen and (max-device-width: 480px) {
+    #averageContainer p {
+      font-size: 1rem;
+      color: #000000;
+      margin: 5px 0;
+      font-weight: bolder;
+      background-color: rgba(255, 255, 255, 0.95); /* Red color with 50% opacity */
+    }
+  }
+
+  #questionContainer label {
+    background-color: rgba(255, 255, 255, 0.95); /* Red color with 50% opacity */
+    font-size: 1.5rem;
+    font-weight: bolder;
+  }
+
 }
