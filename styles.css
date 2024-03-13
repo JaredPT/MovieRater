@@ -100,18 +100,34 @@ body {
 @media only screen and (max-device-width: 480px) {
 
   body {
-    padding: 10px;
+    background-color: white;
+    z-index: 9999;
+    padding: 1px;
   }
 
   h1 {
-    font-size: 44px;
+    font-size: 25px;
   }
   
   button {
-    width: 100%;
-    padding: 15px;
-    font-size: 20px; 
+    width: 75%;
+    height:50%;
+    padding: 1px;
+    margin:0px;
+    font-size: 15px; 
+  }
+  #questionContainer button{
+    margin: 1px;
   }
 
+  #questionContainer label{
+    font-size:1.5rem;
 
+  }
+  #averageContainer p {
+    font-size: 1rem;
+    color: #000000;
+    margin: 5px 0;
+
+  }
 }
