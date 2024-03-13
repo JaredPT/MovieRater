@@ -143,7 +143,7 @@ function roundToHalf(number) {
 // Function to display the result
 function displayResult() {
   const resultContainer = document.getElementById('resultContainer');
-  resultContainer.textContent = `TEXT`;
+//  resultContainer.textContent = `TEXT`;
 
   const initialSelectionContainer = document.getElementById('initialSelection');
   initialSelectionContainer.textContent = `Original Rating: ${initialSelection}`;
