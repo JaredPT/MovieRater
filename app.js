@@ -58,6 +58,7 @@ function handleInitialSelection(selectedNumber) {
 // Function to render the current question
 function renderQuestion() {
   const questionContainer = document.getElementById('questionContainer');
+  // Can add text
   questionContainer.innerHTML = ''; // Clear the container
 
   const questionDiv = document.createElement('div');
@@ -143,7 +144,7 @@ function roundToHalf(number) {
 // Function to display the result
 function displayResult() {
   const resultContainer = document.getElementById('resultContainer');
-//  resultContainer.textContent = `TEXT`;
+ // resultContainer.textContent = `TEXT`;
 
   const initialSelectionContainer = document.getElementById('initialSelection');
   initialSelectionContainer.textContent = `Original Rating: ${initialSelection}`;
