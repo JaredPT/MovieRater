@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body {
+
+  font-family: Arial, Helvetica, "Liberation Sans", FreeSans, sans-serif;
+  background-color: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  border-width: 0;
+  overflow: hidden;
+  cursor: pointer;
+
+}
+
+.back-button {
+  background-color: blue;
+  color: white;
+}
+
+#appContainer {
+  background-color: #fff;
+  z-index: 9999;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  text-align: center;
+  max-width: 700px;
+  width: 100%;
+}
+
+#questionContainer label {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+#questionContainer button {
+  font-size: 18px;
+  padding: 10px 20px;
+  margin: 5px;
+  border: none;
+  border-radius: 5px;
+  background-color: #53d1cb;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#questionContainer button:hover {
+  background-color: #5e4be1;
+}
+
+#questionContainer button.backButton,
+#questionContainer button.resetButton {
+  font-size: 16px;
+  padding: 8px 16px;
+  margin-left: 10px;
+  background-color: #0b060c;
+  color: #333;
+}
+
+#questionContainer button.backButton:hover,
+#questionContainer button.resetButton:hover {
+  background-color: #ce93d8;
+}
+
+#questionContainer button.backButton:disabled,
+#questionContainer button.resetButton:disabled {
+  background-color: #f0f0f0;
+  color: #a0a0a0;
+  cursor: not-allowed;
+}
+
+#resultContainer {
+  font-size: 20px;
+  color: #333;
+  margin-top: 30px;
+}
+
+#averageContainer {
+  margin-top: 20px;
+}
+
+#averageContainer h3 {
+  font-size: 18px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+#averageContainer p {
+  font-size: 16px;
+  color: #555;
+  margin: 5px 0;
+}
+
+@media only screen and (max-device-width: 480px) {
+
+  body {
+    padding: 10px;
+  }
+
+  h1 {
+    font-size: 44px;
+  }
+  
+  button {
+    width: 100%;
+    padding: 15px;
+    font-size: 20px; 
+  }
+
+
+}
