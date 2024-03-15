@@ -2,8 +2,7 @@
 
 body {
 
-  font-family: Arial, Helvetica, "Liberation Sans", FreeSans, sans-serif;
-  background-color: #000;
+  font-family:monospace, Arial, Helvetica, sans-serif;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -16,6 +15,43 @@ body {
 
 }
 
+.wrapper { 
+  height: 100%;
+  width: 100%;
+  left:0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  position: absolute;
+background: linear-gradient(124deg, #ff2400, #e81d1d, #e8b71d, #e3e81d, #1de840, #1ddde8, #2b1de8, #dd00f3, #dd00f3);
+background-size: 1800% 1800%;
+
+-webkit-animation: rainbow 80s ease infinite;
+-z-animation: rainbow 80s ease infinite;
+-o-animation: rainbow 80s ease infinite;
+  animation: rainbow 80s ease infinite;}
+
+@-webkit-keyframes rainbow {
+    0%{background-position:0% 82%}
+    50%{background-position:100% 19%}
+    100%{background-position:0% 82%}
+}
+@-moz-keyframes rainbow {
+    0%{background-position:0% 82%}
+    50%{background-position:100% 19%}
+    100%{background-position:0% 82%}
+}
+@-o-keyframes rainbow {
+    0%{background-position:0% 82%}
+    50%{background-position:100% 19%}
+    100%{background-position:0% 82%}
+}
+@keyframes rainbow { 
+    0%{background-position:0% 82%}
+    50%{background-position:100% 19%}
+    100%{background-position:0% 82%}
+}
+
 h1{
   color: rgb(0, 0, 0);
   font-size:2rem;
@@ -23,7 +59,8 @@ h1{
 
 .back-button {
   background-color: blue;
-  color: white;
+  font-family:monospace, Arial, Helvetica, sans-serif;
+  color: rgb(255, 255, 255);
 }
 
 #appContainer {
@@ -45,6 +82,7 @@ h1{
 
 #questionContainer button {
   font-size: 18px;
+  font-family:monospace, Arial, Helvetica, sans-serif;
   padding: 10px 20px;
   margin: 5px;
   border: none;
@@ -105,7 +143,7 @@ h1{
 @media only screen and (max-device-width: 480px) {
 
   body {
-    background-color: white;
+
     z-index: 9999;
     padding: 1px;
   }
@@ -113,7 +151,7 @@ h1{
   h1 {
     font-size: 1.5rem;
     font-weight: bolder;
-    background-color: rgba(255, 255, 255, 0.95); /* Red color with 50% opacity */
+
   }
   
   button {
@@ -155,13 +193,12 @@ h1{
       color: #000000;
       margin: 5px 0;
       font-weight: bolder;
-      background-color: rgba(255, 255, 255, 0.95); /* Red color with 50% opacity */
+
     }
   }
 
   #questionContainer label {
-    background-color: rgba(255, 255, 255, 0.95); /* Red color with 50% opacity */
-    font-size: 1.5rem;
+        font-size: 1.5rem;
     font-weight: bolder;
   }
 
